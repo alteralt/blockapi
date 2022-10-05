@@ -25,6 +25,7 @@ class Blockchain(str, Enum):
     COSMOS = 'cosmos'
     CRONOS = 'cronos'
     DEFI_KINGDOMS = 'defi-kingdoms'
+    DOGECOIN = 'dogecoin'
     ETHEREUM = 'ethereum'
     FANTOM = 'fantom'
     FUSE = 'fuse'

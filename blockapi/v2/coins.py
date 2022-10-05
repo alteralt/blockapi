@@ -375,6 +375,14 @@ COIN_BTC = Coin(
     info=CoinInfo(coingecko_id='bitcoin'),
 )
 
+COIN_DOGE = Coin(
+    symbol='DOGE',
+    name='Dogecoin',
+    decimals=8,
+    blockchain=Blockchain.DOGECOIN,
+    info=CoinInfo(coingecko_id='dogecoin'),
+)
+
 # TODO: HECO
 # TODO: Arbitrum
 # TODO: SmartBch
