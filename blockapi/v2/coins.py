@@ -367,6 +367,14 @@ COIN_TLOS = Coin(
     blockchain=Blockchain.TELOS,
 )
 
+COIN_BTC = Coin(
+    symbol='BTC',
+    name='Bitcoin',
+    decimals=8,
+    blockchain=Blockchain.BITCOIN,
+    info=CoinInfo(coingecko_id='bitcoin'),
+)
+
 # TODO: HECO
 # TODO: Arbitrum
 # TODO: SmartBch
