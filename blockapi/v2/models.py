@@ -21,6 +21,7 @@ class Blockchain(str, Enum):
     BITCOIN = 'bitcoin'
     BIT_TORRENT = 'bit-torrent'
     BOBA = 'boba'
+    BOS = 'bos'
     CELO = 'celo'
     COSMOS = 'cosmos'
     CRONOS = 'cronos'
@@ -287,7 +288,7 @@ class OperationItem:
     hash: str
     type: OperationType
     direction: OperationDirection
-    confirmed: datetime
+    confirmed: Optional[datetime]
     raw: dict
 
     @classmethod

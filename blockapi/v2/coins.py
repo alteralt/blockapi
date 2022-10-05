@@ -367,6 +367,8 @@ COIN_TLOS = Coin(
     blockchain=Blockchain.TELOS,
 )
 
+COIN_BOS = Coin(symbol='BOS', name="BosCoin", decimals=7, blockchain=Blockchain.BOS)
+
 # TODO: HECO
 # TODO: Arbitrum
 # TODO: SmartBch
