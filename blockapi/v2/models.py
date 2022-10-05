@@ -34,6 +34,7 @@ class Blockchain(str, Enum):
     IOTEX = 'iotex'
     KLAYTN = 'klaytn'
     KU_COIN = 'ku-coin'
+    LITECOIN = 'litecoin'
     METIS = 'metis'
     MOONBEAM = 'moonbeam'
     MOONBEAM_MOONRIVER = 'moonbeam-moonriver'

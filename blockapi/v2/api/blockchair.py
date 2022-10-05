@@ -1,9 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Iterable, List
 
-from blockapi.utils.num import to_decimal
 from blockapi.v2.base import BlockchainApi, IBalance
-from blockapi.v2.coins import COIN_BTC
+from blockapi.v2.coins import COIN_BTC, COIN_LTC
 from blockapi.v2.models import (
     ApiOptions,
     AssetType,
@@ -169,7 +168,7 @@ class BlockchairApi(BlockchainApi, IBalance, ABC):
                 operations=[
                     OperationItem.from_api(
                         amount_raw=outgoing.get('value'),
-                        coin=self.coin, 
+                        coin=self.coin,
                         from_address=address,
                         to_address=(
                             tx['outputs'][0]['recipient']
@@ -192,3 +191,8 @@ class BlockchairBitcoinApi(BlockchairApi):
     blockchain = Blockchain.BITCOIN
     name = 'bitcoin'
 
+
+class BlockchairLitecoinApi(BlockchairApi):
+    coin = COIN_LTC
+    blockchain = Blockchain.LITECOIN
+    name = 'litecoin'
